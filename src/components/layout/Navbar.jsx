@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Brain, Menu, X } from 'lucide-react';
+import { Blend, Menu, X } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
@@ -49,7 +49,7 @@ const Navbar = () => {
         <div className='container mx-auto px-4 py-4'>
           <div className='flex justify-between items-center'>
             <div className='flex items-center'>
-              <Brain className='h-8 w-8 text-green-600 mr-2' />
+              <Blend className='h-8 w-8 text-orange-600 mr-2' />
               <h1 className='text-2xl font-bold text-green-700'>
                 adblabla tech
               </h1>
