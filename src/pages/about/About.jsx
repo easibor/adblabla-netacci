@@ -6,7 +6,8 @@ import AnimatedSection from '../../components/animation/AnimatedSection';
 const About = () => {
   return (
     <AnimatedSection id='about'>
-      <div className='container mx-auto px-4'>
+      <div className='container mx-auto px-4 relative'>
+        <div className='absolute top-20 z-10 left-10 w-10 h-10 bg-orange-300 rounded-full opacity-20 '></div>
         <h2 className='text-4xl font-bold mb-8 text-center text-green-700'>
           Empowering New Age Solutions with AI
         </h2>

@@ -86,29 +86,29 @@ const Navbar = () => {
             </motion.button>
           </div>
         </div>
+        {isMenuOpen && (
+          <div className='md:hidden bg-white shadow-lg absolute top-16 left-0 right-0 z-40'>
+            <nav className='container mx-auto px-4 py-4'>
+              <ul className='space-y-4'>
+                {['About', 'Solutions', 'Contact'].map((item) => (
+                  <li key={item}>
+                    <button
+                      onClick={() => scrollToSection(item.toLowerCase())}
+                      className={`text-sm font-medium transition-colors duration-200 ${
+                        activeSection === item.toLowerCase()
+                          ? 'text-orange-500'
+                          : 'text-gray-600 hover:text-orange-500'
+                      }`}
+                    >
+                      {item}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
+        )}
       </motion.header>
-      {isMenuOpen && (
-        <div className='md:hidden bg-white shadow-lg absolute top-16 left-0 right-0 z-40'>
-          <nav className='container mx-auto px-4 py-4'>
-            <ul className='space-y-4'>
-              {['About', 'Solutions', 'Contact'].map((item) => (
-                <li key={item}>
-                  <button
-                    onClick={() => scrollToSection(item.toLowerCase())}
-                    className={`text-sm font-medium transition-colors duration-200 ${
-                      activeSection === item.toLowerCase()
-                        ? 'text-orange-500'
-                        : 'text-gray-600 hover:text-orange-500'
-                    }`}
-                  >
-                    {item}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
-      )}
     </>
   );
 };

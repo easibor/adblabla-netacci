@@ -92,7 +92,8 @@ const ContactForm = () => {
 const Contact = () => {
   return (
     <AnimatedSection id='contact' className='mb-24'>
-      <div className='container mx-auto px-4'>
+      <div className='container mx-auto px-4 relative '>
+        <div className=' hidden lg:block absolute top-40 right-[300px] w-60 h-60  bg-orange-200 rounded-full opacity-20 '></div>
         <h2 className='text-4xl font-bold mb-8 text-center text-green-700'>
           Get in Touch
         </h2>

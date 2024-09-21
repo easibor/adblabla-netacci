@@ -8,8 +8,13 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className='relative h-[70vh] flex items-center justify-center overflow-hidden'
+        className='relative h-[70vh] flex items-center justify-center overflow-hidden relative'
       >
+        <div className='absolute top-10 z-10 left-10 w-2 h-80 transform rotate-45 bg-green-600 rounded-full opacity-10 '></div>
+        <div className='absolute top-10 z-10 left-10 w-2 h-80 transform rotate-90 bg-green-600 rounded-full opacity-10 '></div>
+        <div className='absolute top-10 z-10 right-10 w-20 h-80 bg-green-300 rounded-full opacity-20 '></div>
+
+        <div className='hidden lg:block absolute -bottom-[200px] z-10 left-70 w-60 h-60 bg-orange-300 rounded-full opacity-20 '></div>
         <div className='absolute inset-0 z-0'>
           <motion.div
             animate={{
@@ -53,7 +58,7 @@ const Hero = () => {
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 1.5, repeat: Infinity }}
-          className='absolute bottom-10 left-1/2 transform -translate-x-1/2, cursor-pointer'
+          className='absolute bottom-0 left-1/2 lg:bottom-10 transform -translate-x-1/2, cursor-pointer  '
           onClick={() =>
             window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })
           }
