@@ -49,10 +49,9 @@ const Navbar = () => {
         <div className='container mx-auto px-4 py-4'>
           <div className='flex justify-between items-center'>
             <div className='flex items-center'>
-              <Blend className='h-8 w-8 text-orange-600 mr-2' />
-              <h1 className='text-2xl font-bold text-green-700'>
-                adblabla tech
-              </h1>
+              <h1 className='text-2xl font-bold text-green-700'>adblabla</h1>
+              <Blend className='h-8 w-8 text-orange-600 mx-2' />
+              <h1 className='text-2xl font-bold text-green-700'>tech</h1>
             </div>
             <nav className='hidden md:block'>
               <ul className='flex space-x-6'>

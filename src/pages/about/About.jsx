@@ -8,7 +8,7 @@ const About = () => {
     <AnimatedSection id='about'>
       <div className='container mx-auto px-4 relative'>
         <div className='absolute top-20 z-10 left-10 w-10 h-10 bg-orange-300 rounded-full opacity-20 '></div>
-        <h2 className='text-4xl font-bold mb-8 text-center text-green-700'>
+        <h2 className='text-3xl font-bold mb-8 text-center text-green-700'>
           Empowering New Age Solutions with AI
         </h2>
         <p className='text-xl mb-12 text-center max-w-3xl mx-auto text-gray-700 leading-relaxed'>

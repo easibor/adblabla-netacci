@@ -34,15 +34,15 @@ const Hero = () => {
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className='text-6xl font-bold mb-4'
+            className='text-3xl md:text-5xl font-bold mb-4'
           >
-            Adblabla tech
+            Shaping Tomorrow&apos;s Technology
           </motion.h1>
           <motion.p
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className='text-2xl mb-8'
+            className='text-xl md:text-2xl mb-8'
           >
             Revolutionizing industries with cutting-edge AI solutions
           </motion.p>

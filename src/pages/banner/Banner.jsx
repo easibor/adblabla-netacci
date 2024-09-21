@@ -4,7 +4,7 @@ const Banner = () => (
   <AnimatedSection id='contact'>
     <div className='mx-[-1rem] bg-gradient-to-r from-green-600 to-green-700 text-white py-20 px-4  shadow-xl'>
       <div className='max-w-4xl mx-auto text-center'>
-        <h2 className='text-4xl font-bold mb-6'>
+        <h2 className='text-3xl font-bold mb-6'>
           Revolutionizing Industries with AI
         </h2>
         <p className='text-xl mb-8'>
