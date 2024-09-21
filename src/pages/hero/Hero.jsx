@@ -58,7 +58,7 @@ const Hero = () => {
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 1.5, repeat: Infinity }}
-          className='absolute bottom-0 left-1/2 lg:bottom-10 transform -translate-x-1/2, cursor-pointer  '
+          className='absolute bottom-[10px] md:bottom-0 left-[45%] md:left-[49%] md:-translate-x-1/2 lg:bottom-10 transform -translate-x-1/2, cursor-pointer  '
           onClick={() =>
             window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })
           }
